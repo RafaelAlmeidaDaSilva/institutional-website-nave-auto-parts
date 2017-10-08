@@ -54,10 +54,7 @@
 	    		</div>
 	    	</header>	
 			<section id="banner">
-	    		<div class="jumbotron col-md-12">
-	  				<div class="container col-md-10 col-md-offset-1">
-	  					<div class="row col-md-10 col-md-offset-1">
-	   						<div class="container col-md-8 col-md-offset-2 text-center"> 
+	    		<div class="jumbotron col-md-12"> 
 	       						
 	       						<div id="myCarousel" class="carousel slide" data-ride="carousel">
 								  <!-- Indicators -->
@@ -70,15 +67,15 @@
 								  <!-- Wrapper for slides -->
 								  <div class="carousel-inner">
 								    <div class="item active">
-								      <img src="la.jpg" alt="Los Angeles">
+								      <img class= "center-block" src="img/la.jpg" alt="Los Angeles" height="100%" width="600px">
 								    </div>
 
 								    <div class="item">
-								      <img src="img/la.jpg" alt="Chicago">
+								      <img class= "center-block" src="img/la.jpg" alt="Chicago" height="100%" width="600px">
 								    </div>
 
 								    <div class="item">
-								      <img src="img/la.jpg" alt="New York">
+								      <img class= "center-block" src="img/la.jpg" alt="New York" height="100%" width="600px">
 								    </div>
 								  </div>
 
@@ -92,10 +89,6 @@
 								    <span class="sr-only">Next</span>
 								  </a>
 								</div>
-
-	   						</div>
-	  					</div>
-	    			</div>
 	    		</div>
 			</section>
 		
@@ -104,15 +97,9 @@
 	  				<div class="container col-md-12 col-md-offset-0">
 	  					<div class="row col-md-12 col-md-offset-0">
 	   						<div class="container col-md-12 col-md-offset-0 text-center">
-	   							
-	      							
-	        								
-	        							<h3 class="text-center">SOBRE</h3>
-	      							
-	      							
-	        							<p>A Nave Autoparts Importação e Exportação Ltda. É uma empresa Brasileira com sede em São Paulo atuando no mercado nacional e internacional de peças e acessórios novos desde 2004</p>
-	        							<a href="#contato" class="botao">ENTRE EM CONTATO</a>
-	      						
+								<h3 class="text-center">SOBRE</h3>		
+						        <p>A Nave Autoparts Importação e Exportação Ltda. É uma empresa Brasileira com sede em São Paulo atuando no mercado nacional e internacional de peças e acessórios novos desde 2004</p>
+								<a href="#contato" class="botao">ENTRE EM CONTATO</a>
 	   						</div>
 	    				</div>
 	    			</div>
@@ -155,35 +142,22 @@
 				<div class="jumbotron col-md-12">
 	  				<div class="container col-md-12 col-md-offset-0">
 	  					<div class="row col-md-12 col-md-offset-0">
-	   						<div class="container col-md-12 col-md-offset-0"><div class="panel panel-default">
-	      							<div class="panel-heading">
-	        							<h3 class="text-center"> LOCAL </h3>
-	      							</div>
-	      							<div class="panel-body text-center">
-	        							<article>
-            	  							 <figure>
-                	        					<a href="https://www.google.com.br/maps/place/Rua+Serra+de+Japi,+982+-+Vila+Gomes+Cardim,+S%C3%A3o+Paulo+-+SP/@-23.5479685,-46.5706887,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce5e9392d4c773:0xf1ee82f79df152c6!8m2!3d-23.5479685!4d-46.5685">
-                   	    						 <img src="img/Local.png" alt="local">
-
-                    	   						</a>     
-                     
+	   						<div class="container col-md-12 col-md-offset-0">
+	        							<h3 class="text-center"> LOCAL </h3>		
+	        							<article class="text-center">
+            	  							 <figure>     
+						   							<!--Google map-->
+													<div id="map-container" class="z-depth-1-half map-container" style="height: 400px"></div>
+			
                         							<figcaption>
-
-                            							<a href="https://www.google.com.br/maps/place/Rua+Serra+de+Japi,+982+-+Vila+Gomes+Cardim,+S%C3%A3o+Paulo+-+SP/@-23.5479685,-46.5706887,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce5e9392d4c773:0xf1ee82f79df152c6!8m2!3d-23.5479685!4d-46.5685">
-                               
-                                				<div class="Conteudo">
-                                					
-                                   					<p>End. Rua Serra de Japi, 982,</p>
-                                   					<p>Tatuape, Sao Paulo, SP,</p> 
-                                   					<p>CEP 03309-000, Brasil </p>
-
-                                				</div>
-                                           	</a>
-                        				</figcaption>
-               						</figure>
-        						</article>     
-	      							</div>
-	   						 	</div>
+                            							<a href="https://www.google.com.br/maps/place/Rua+Serra+de+Japi,+982+-+Vila+Gomes+Cardim,+S%C3%A3o+Paulo+-+SP/@-23.5479685,-46.5706887,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce5e9392d4c773:0xf1ee82f79df152c6!8m2!3d-23.5479685!4d-46.5685">                        
+															<p>Rua Serra de Japi, 982,
+															Tatuape, Sao Paulo, SP,
+															CEP 03309-000, Brasil </p>
+                                           				</a>
+                        							</figcaption>	
+               								 </figure>	
+        								</article>     
 	    					</div>
 	    				</div>
 	    			</div>
@@ -208,6 +182,42 @@
 	</body>
 	<script src="bootstrap-3.3.7-dist/js/jquery.js"></script>
 	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<!-- SCRIPTS -->
+	<!-- JQuery -->
+	<script type="text/javascript" src="MDB/js/jquery-3.1.1.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="MDB/js/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="MDB/js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="MDB/js/mdb.min.js"></script>
+
+	<!--Google Maps-->
+	<script src="https://maps.google.com/maps/api/js"></script>
+	<!-- Google Maps settings -->
+	<script>
+		// Regular map
+		function regular_map() {
+			var var_location = new google.maps.LatLng(-23.547988, -46.568457);
+	  
+			var var_mapoptions = {
+				center: var_location,
+				zoom: 14
+			};
+	  
+			var var_map = new google.maps.Map(document.getElementById("map-container"),
+				var_mapoptions);
+	  
+			var var_marker = new google.maps.Marker({
+				position: var_location,
+				map: var_map,
+				title: "New York"
+			});
+		}
+	  
+		// Initialize maps
+		google.maps.event.addDomListener(window, 'load', regular_map);
+	</script>  
 
 
-</html>
+</html>	
