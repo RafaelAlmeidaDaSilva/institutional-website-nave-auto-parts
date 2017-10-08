@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Index</title>
+  
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+<style type="text/css">
+              .navbar {
+                 margin: 0;
+                }
+
+              .navbar .glyphicon{
+                color:gray;
+              }
+              body { padding-top: 70px; }
+</style>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button class="navbar-toggle" type="button" data-target=".navbar-collapse" data-toggle="collapse">
+      <span class="glyphicon glyphicon-align-justify"></span>
+    </button>
+    <a class="navbar-brand" href="index.php"> Rafael Almeida</a>
+  </div>
+  <ul class="nav navbar-nav collapse navbar-collapse">
+    <li><a href="sobre.php"><span class="glyphicon glyphicon-home"></span> Sobre</a></li>
+    <li><a href="#"> <span class="glyphicon glyphicon-question-sign"></span> Ajuda</a></li>
+    <li><a href="#"> <span class="glyphicon glyphicon-list-alt"></span> Perguntas frequentes</a></li>
+    <li><a href="#"><span class="glyphicon glyphicon-bullhorn"></span> Entre em contato</a></li>
+  </ul>
+</nav>
+
+
+<div class="jumbotron col-md-12">
+  <div class="container col-md-10 col-md-offset-1">
+  <div class="row col-md-10 col-md-offset-1">
+   <div class="container col-md-8 col-md-offset-1"> 
+       <h1>Ótima escolha!</h1>
+    <p>Obrigado pela preferência.
+    Preencha seus dados para efetivar a compra.</p>
+   </div>
+  <div class="container col-md-4">
+
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h2>Sua compra</h2>
+      </div>
+      <div class="panel-body">
+        <dl>  
+           <img width="60" height="60" class="img img-responsive" src="img/produto/slide2.jpg" alt="Fuzzy Cardigan" 
+            class="img-thumbnail img-responsive">
+
+          <dt>Produto</dt>
+          <dd>Gigolo Rafael Almeida</dd>
+
+          <dt>Cor</dt>
+          <dd>Moreno</dd>
+
+          <dt>Tamanho</dt>
+          <dd>1.70</dd>
+
+          <dt>Preço</dt>
+          <dd>R$ 500,00</dd>
+        </dl>
+      </div>
+    
+    </div>
+    </div>
+    
+
+    <div class="container col-md-6">
+        <form name="frmCadastro" action="#" method="Post">
+          
+          <fieldset>
+            <legend> Dados pessoais</legend>
+            <div class="from-group">
+              <label for="nome">Nome completo:</label>
+              <input type="text" class="form-control" id="nome" name="nome" autofocus required>
+
+              <style type="text/css">
+                .form-control:invalid{
+                    outline: 1px solid #cc0000;
+                }   
+                </style>
+
+            <div class="from-group">
+              <label for="twitter">Twitter:</label>
+              <input placeholder="exemplo@exemplo.com" type="text" class="form-control" id="twitter" name="usuario-twitter" pattern="^@\w{2,}"></input>
+            </div>
+              
+            <div class="from-group">
+              <label for="email">Email:</label>
+              <input placeholder="exemplo@exemplo.com" type="email" class="form-control" id="email" name="email"></input>
+            </div>
+
+            <div class="from-group">
+              <label for="email">Email(2):</label>
+              <div class="input-group">
+                <span class="input-group-addon">@</span>
+                <input placeholder="exemplo@exemplo.com" type="email" class="form-control" id="email" name="email"></input>  
+              </div>
+              
+            </div>
+
+            <div class="from-group">
+              <label for="cpf">CPF:</label>
+              <input placeholder="000.000.000-00" type="text" class="form-control" id="cpf" name="cpf" required></input>
+            </div>
+            
+            <div class="checkbox">
+              <label>
+              <input type="checkbox" value="sim" id="check" name="spam" checked></input>
+              Quero receber spam de nudes novos
+              </label>
+            </div>
+
+          </fieldset>
+
+          <fieldset>
+            <legend>Cartão de crédito</legend>
+            <div class="form-group">
+              <label for="numero-cartao"> Número - CVV:</label>
+              <input type="text" class="form-control" id="numero-cartao" name="numero-cartao">
+            </div>
+            <div class="form-group">
+              <label for="bandeira-cartao"> Bandeira: </label>
+              <select name="bandeira-cartao" id="bandeira-cartao">
+                <option value="master">MasterCard</option> 
+                <option value="visa">Visa</option> 
+                <option value="amex">American Express</option> 
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="validade-cartao">Validade:</label>
+              <input type="month" class="form-control"name="validade-cartao">
+            </div>
+          </fieldset>
+
+          <button type="submit" class="btn btn-lg btn-primary pull-right"><span class="glyphicon glyphicon-thumbs-up"></span>
+           Confirmar Pedido </button>
+
+        </form>
+    </div>
+</div>
+  <div class="row col-md-10">
+
+    <div class="container col-md-8" col-md-offset-1>
+
+    <form name="pratica" action="#" method="POST">
+      
+       <h2>TextBox simples</h2>
+       <p>text com Autofocus e Placeholder. O autofocus faz o campo estar selecionado, e o placeholder atribui um texto dentro do campo caso ele esteja vazio. </p>
+       <label for="nome" >Nome:</label>
+       <input type="text" name="nome" id="nome" autofocus placeholder="Digite seu nome">
+
+
+       <h2>Submit simples</h2>
+       <p>Similar ao button, mas utilizado para chamada do evento de action do formulario</p>
+       <input type="submit" name="SubmitTeste" value="Enviar Submit">
+
+       <h2>Button simples</h2>
+        <p>Renderiza um botão dentro do formulario, mas não dispara nenhuma função direta (Action) nele, comumente usados para disparar eventos para execução de script.</p>
+       <input type="button" name="ButtonTeste" value="Enviar Button">
+
+       <h2> Botão de Imagem </h2>
+       <input type="image" name="botao" src="img/slide1.jpg" width="40" height="28">
+
+       <h2> Botao de reset (Limpar)</h2>
+       <input type="reset" name="reset" value="limpar">
+
+
+       <h2>Button (button, submit, reset)</h2>
+       <button type="button" name="enviar"> Clique aqui</button>
+
+       <h2> Enviar arquivo</h2>
+       <p> Quando é necessario enviar um arquivo.</p>
+       <input type="file" name="anexo">
+
+       <h2>Input Hidden</h2>
+       <p> Receber informações que um usuario não consegui ver de forma natural. Mas consegui ver seu valor através do html da página.</p>
+       <input type="hidden" name="codigo" value="abc012xtuasd">
+
+       <h2>CheckBox simples</h2>
+       <input id="contrato" name="contrato" type="checkbox" value="sim">
+       <label for="contrato">Aceito os termos do contrato.</label>
+
+       <h2>Radio Button</h2>
+        <p>
+          <input type="radio" name="idade" id="idade5" value="5">
+          <label for="idade5">Menos de 5 anos</label>
+        </p>
+        <p>
+          <input type="radio" name="idade" id="idade10" value="10">
+          <label for="idade10">Menos de 10 anos</label>
+        </p>
+        <p>
+          <input type="radio" name="idade" id="idade15" value="15">
+          <label for="idade15">Menos de 15 anos</label>
+        </p>
+        <p>
+          <input type="radio" name="idade" id="idade20" value="20">
+          <label for="idade20">Menos de 20 anos</label>
+        </p>
+
+        <h2> TextBox Multi lines</h2>
+        <textarea name="descricao">Algum texto aqui!</textarea>
+
+        <h2>ComboBox</h2>
+        <select name="cidades">
+          <option value="bsb"> Brasília</option>
+          <option value="rj"> Río de Jnaeiro</option>
+          <option value="sp"> São Paulo</option>
+        </select>
+        
+        <h2>ComboBox Multiple</h2>
+        <select multiple name="cidades">
+          <option value="bsb"> Brasília</option>
+          <option value="rj"> Río de Jnaeiro</option>
+          <option value="sp"> São Paulo</option>
+        </select>
+
+        <select name="bairro">
+          <optgroup label="Brasília">
+            <option value="asan_bsb"> Asa Norte</option>
+            <option value="asas_bsb"> Asa Sul</option>
+          </optgroup>
+
+          <optgroup label="São Paulo">
+            <option value="vlmariana_sp"> Vila Mariana</option>
+            <option value="centro_sp"> Centro </option>
+          </optgroup>
+
+          <optgroup label="Rio de Janeiro">
+            <option value="botafogo_rj"> Botafogo </option>
+            <option value="centro_rj"> Centro </option>
+          </optgroup>
+        </select>
+
+        <h2> Input Email</h2>
+        <p> Permite que os dispositivos moveis, exibam um teclado adaptado para facilitar esse tipo de entrada.</p>
+        <input type="email" name="email">
+
+        <h2> Input Number </h2>
+        <p> Exibe um teclado numerico para dispositivos móveis, nos navegadores modernos um componente de incremento e decremento do valor numerico do campo</p>
+        <input type="number" max="100" step="5">
+
+        <h2> Input url </h2>
+        <p> Permite que os dispositivos móveis exibam atalhos de texto no teclado como "www.", ".com" ...</p>
+        <input type="url" name="endereco">
+        
+        <h2> Input range </h2>
+        <p> exibe um controle deslizante, para valores numericos e controle em escala.</p>
+        <input type="range" name="volume">
+      
+        <h2> Input Date </h2>        
+        <input type="date" name="validade">
+
+        <h2> Input Color </h2>
+        <p> </p>        
+        <input type="color" name="cor_olhos">
+
+        <h2> Input Search </h2>        
+        <p> Campo especifico para busca, o atributo result determina quantas das ultimas buscas irão ser armazenadas para ser lembradas depois.</p>
+        <input type="search" results="10" name="pesquisa">
+
+        <h2> Input telefone </h2>
+        <p> Especifico para receber um numero de telefone, em dispositivos moveis é comum ser exibido um teclado numerico devido a ele.</p>
+        <input type="tel" name="telefone">
+
+
+         <h2> Input text( list, autocomplete, datalist )</h2>
+         <input type="text" list="cidades" autocomplete="on">
+         <datalist id="cidades">
+           <option value="Brasília">
+           <option value="Rio de Janeiro">
+           <option value="São Paulo">
+         </datalist>
+         
+         <p><b>autocomplete</b> vai utilizar os outros valores recebidos por outros campos, mas utilizando o atributo <b>List</b> irá preencher com os ultimos atributos do campo.</p>
+
+
+
+    </form>
+  </div>  </div>
+</div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  document.querySelector('form input').oninvalid = function(evt) {
+    // cancela comportamento padrão do browser
+    evt.preventDefault();
+
+    // checa validade e mostra alert
+    if (!this.validity.valid) {
+        alert("Nome obrigatório!");
+    }
+};
+
+document.querySelector('input[type=email]').oninvalid = function() {
+
+  // remove mensagens de erro antigas
+  this.setCustomValidity("");
+
+  // reexecuta validação
+  if (!this.validity.valid) {
+
+      // se inválido, coloca mensagem de erro
+      this.setCustomValidity("Email inválido");
+  }
+};
+
+</script>
+</body>
+</html>

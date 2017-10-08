@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Index-full</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <style>
+
+  </style>
+</head>
+<body>
+ <div class="jumbotron">
+    <div class="container">    
+      <button id="outro" class="btn btn-default" data-toggle="popover" data-title="Mensagem <strong style= 'color:red'> teste </strong>" data-content="Olá, seja bem vindo!">outro</button>
+
+      <button id="custom" class="btn btn-default" data-toggle="popover" data-title="Mensaegm custom"> custom </button>
+    </div>
+  </div>  
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    $('[data-toggle="popover"]').popover(
+      {
+        animation:true,
+        delay:0, // 1000 igual a um segundo
+        html:true,
+        placement:'bottom',
+        trigger:' hover ' //click | hover | focus
+
+      });
+
+    $('#custom').on('click', function(){
+      $('#outro').popover('show');
+    })
+    $('#outro').on('click', function(){
+      $('#custom').popover('show');
+    })
+  </script>
+</body>
+</html>
