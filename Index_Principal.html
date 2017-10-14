@@ -18,6 +18,10 @@
                 color:gray;
               }
             	  body { padding-top: 70px; }
+
+				  .form-control:invalid{
+											  outline: 1px solid #cc0000;
+										  }   
 			</style>
 
 			<nav class="navbar navbar-default navbar-fixed-top">
@@ -28,7 +32,7 @@
 					</button>
 					
 					
-					<a class="navbar-brand" href="index.php">
+					<a class="navbar-brand" href="#">
 							<p><img src="img/Logo_mini.png" alt="logo" width="25"/>
 						Nave Autoparts</p> </a>
 					
@@ -45,7 +49,7 @@
 	  				<div class="container col-md-10 col-md-offset-1">
 	  					<div class="row col-md-10 col-md-offset-1">
 	   						<div class="container col-md-8 col-md-offset-2 text-center"> 
-								<img class="center-block" src="img/Logo.png" alt="logo">    
+								<img class="center-block" src="img/N.png" alt="logo">    
 								<h1>Nave Autoparts</h1>
 	    						<p> Peças e Acessórios para veículos  automotores</p>
 	   						</div>
@@ -111,7 +115,38 @@
 	  				<div class="container col-md-10 col-md-offset-1">
 	  					<div class="row col-md-10 col-md-offset-1 ">
 		       					<div class="container col-md-12">
-		       					<h3 class= "text-center">CONTATO</h3>
+								   <h3 class= "text-center">CONTATO</h3>
+								   <form name="frmCadastro" action="#" method="Post">
+									
+									<fieldset>
+									  <legend> Dados pessoais</legend>
+									  <div class="from-group">
+										<label for="nome">Nome / Nome Fantasia:</label>
+										<input type="text" class="form-control" id="nome" name="nome" autofocus required>
+									</fieldset>
+									<br>
+									<fieldset>	  
+										<legend> Dados do E-mail </legend>	
+										<div class="from-group">
+											<label for="email">Email (Remetente):</label>
+											<div class="input-group">
+											  <span class="input-group-addon">@</span>
+											  <input placeholder="exemplo@exemplo.com" type="email" class="form-control" id="email" name="email"></input>  
+											</div>
+										  </div>
+										  	
+										<label for="nome">Assunto:</label>
+										<input type="text" class="form-control" id="nome" name="nome" autofocus required>
+										<label for="nome">Menssagem:</label>
+										<textarea class="form-control" name="descricao" placeholder="Algum conteudo aqui!" autofocus required></textarea>
+									
+									</fieldset>	
+									 <br>
+	
+									<button type="submit" class="btn btn-lg btn-primary pull-right"><span class="glyphicon glyphicon-thumbs-up"></span>
+									Enviar </button>
+									<br>
+								  </form>
 		    						<div class="fone col-md-4 col-md-offset-1 text-center">
 		        							 <img class="center-block"src="img/fone.png" alt="fone">
 		        							 <!-- Adicionar dinamicamente com o AngularJS -->
@@ -199,8 +234,38 @@
 	<!-- MDB core JavaScript -->
 	<script type="text/javascript" src="MDB/js/mdb.min.js"></script>
 
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript">
+	  document.querySelector('form input').oninvalid = function(evt) {
+		// cancela comportamento padrão do browser
+		evt.preventDefault();
+	
+		// checa validade e mostra alert
+		if (!this.validity.valid) {
+			alert("Nome obrigatório!");
+		}
+	};
+	
+	document.querySelector('input[type=email]').oninvalid = function() {
+	
+	  // remove mensagens de erro antigas
+	  this.setCustomValidity("");
+	
+	  // reexecuta validação
+	  if (!this.validity.valid) {
+	
+		  // se inválido, coloca mensagem de erro
+		  this.setCustomValidity("Email inválido");
+	  }
+	};
+	
+	</script>
+	
+
 	<!--Google Maps-->
 	<script src="https://maps.google.com/maps/api/js"></script>
+
+
 	<!-- Google Maps settings -->
 	<script>
 		// Regular map
