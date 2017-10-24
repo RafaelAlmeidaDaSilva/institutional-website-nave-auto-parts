@@ -12,39 +12,86 @@
 			<style type="text/css">
               	.navbar {
                  margin: 0;
+				 background:gray;
+				 
                 }
 
+				/* *>a
+				{
+					color: white;
+				} */
+				.navbar-default .navbar-nav > li > a 
+				{
+					color: white;
+				}
+
+				a
+				{
+					color:white;
+				}
+
+				.navbar-brand > p
+				{
+					color: white;
+				}
+
+				*{
+					color: white;
+				}
+
+				legend
+				{
+					color:white
+				}
+
               	.navbar .glyphicon{
-                color:gray;
+               	 color:white;
               }
-            	  body { padding-top: 70px; }
+            	  body { padding-top: 70px;
+					background: white;
+				   }
 
 				  .form-control:invalid{
 											  outline: 1px solid #cc0000;
 										  }   
+
+				 .jumbotron
+				{
+					background: steelblue;
+				}
+
+					#assinatura >p
+					{
+						font-size: 14px; 
+						align-self: button;
+					}
+
+
 			</style>
 
 			<nav class="navbar navbar-default navbar-fixed-top">
 				
-	  			<div class="navbar-header">
+	  			<div class="navbar-header navbar-right center-block ">
 	    			<button class="navbar-toggle" type="button" data-target=".navbar-collapse" data-toggle="collapse">
 	      				<span class="glyphicon glyphicon-align-justify"></span>
+				
 					</button>
 					
 					
 					<a class="navbar-brand" href="#">
 							<p><img src="img/Logo_mini.png" alt="logo" width="25"/>
-						Nave Autoparts</p> </a>
+						Nave Autoparts</p> 
+					</a>
 					
 	  			</div>
 	  			<ul class="nav navbar-nav collapse navbar-collapse">
 	    			<li><a href="#sobre"><span class="glyphicon glyphicon-home"></span> Sobre</a></li>
 	    			<li><a href="#contato"><span class="glyphicon glyphicon-bullhorn"></span> Entre em contato</a></li>
 	    			<li><a href="#local"> <span class="glyphicon glyphicon-map-marker"></span>Local</a></li>
-				  </ul>
+				</ul>
 				  
 			</nav>
-			<header>
+			<!-- <header>
 				<div class="jumbotron col-md-12">
 	  				<div class="container col-md-10 col-md-offset-1">
 	  					<div class="row col-md-10 col-md-offset-1">
@@ -56,7 +103,7 @@
 	  					</div>
 	    			</div>
 	    		</div>
-	    	</header>	
+	    	</header>	 -->
 			<section id="banner">
 	    		<div class="jumbotron col-md-12"> 
 	       						
@@ -65,21 +112,32 @@
 								  <ol class="carousel-indicators">
 								    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 								    <li data-target="#myCarousel" data-slide-to="1"></li>
-								    <li data-target="#myCarousel" data-slide-to="2"></li>
+									<li data-target="#myCarousel" data-slide-to="2"></li>
+									<li data-target="#myCarousel" data-slide-to="3"></li>
 								  </ol>
 
 								  <!-- Wrapper for slides -->
 								  <div class="carousel-inner">
-								    <div class="item active">
-								      <img class= "center-block" src="img/la.jpg" alt="Los Angeles" height="100%" width="600px">
+
+									<div class="item active">
+										<img class= "center-block" src="img/N.png" alt="Logo">
+										<div class="text-center">
+												<h1>Nave Autoparts</h1>
+												<p> Peças e Acessórios para veículos  automotores</p>
+										</div>
+									</div>
+
+								    <div class="item">
+									  <img class= "center-block" src="img/la.jpg" alt="Los Angeles" height="100%" width="515px">
+									  
 								    </div>
 
 								    <div class="item">
-								      <img class= "center-block" src="img/la.jpg" alt="Chicago" height="100%" width="600px">
+								      <img class= "center-block" src="img/la.jpg" alt="Chicago" height="100%" width="515px">
 								    </div>
 
 								    <div class="item">
-								      <img class= "center-block" src="img/la.jpg" alt="New York" height="100%" width="600px">
+								      <img class= "center-block" src="img/la.jpg" alt="New York" height="100%" width="515px">
 								    </div>
 								  </div>
 
@@ -143,7 +201,7 @@
 									</fieldset>	
 									 <br>
 	
-									<button type="submit" class="btn btn-lg btn-primary pull-right"><span class="glyphicon glyphicon-thumbs-up"></span>
+									<button type="submit" class="btn btn-lg btn-primary pull-right">
 									Enviar </button>
 									<br>
 								  </form>
@@ -183,11 +241,13 @@
 													<div id="map-container" class="z-depth-1-half map-container" style="height: 400px"></div>
 			
                         							<figcaption>
-                            							<a href="https://www.google.com.br/maps/place/Rua+Serra+de+Japi,+982+-+Vila+Gomes+Cardim,+S%C3%A3o+Paulo+-+SP/@-23.5479685,-46.5706887,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce5e9392d4c773:0xf1ee82f79df152c6!8m2!3d-23.5479685!4d-46.5685">                        
-															<p>Rua Serra de Japi, 982,
+														<p>
+                            								<a href="https://www.google.com.br/maps/place/Rua+Serra+de+Japi,+982+-+Vila+Gomes+Cardim,+S%C3%A3o+Paulo+-+SP/@-23.5479685,-46.5706887,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce5e9392d4c773:0xf1ee82f79df152c6!8m2!3d-23.5479685!4d-46.5685">                        
+															Rua Serra de Japi, 982,
 															Tatuape, Sao Paulo, SP,
-															CEP 03309-000, Brasil </p>
-                                           				</a>
+															CEP 03309-000, Brasil 
+														   </a>
+														</p>
                         							</figcaption>	
                								 </figure>	
         								</article>     
@@ -201,15 +261,7 @@
 		  				<div class="container col-md-10 col-md-offset-1">
 		  					<div class="row col-md-10 col-md-offset-1">
 		   						<div class="container col-md-8 col-md-offset-1"> 
-									<style>
-										.assinatura >p
-										{
-											font-size: 14px; 
-											color: gray;
-											align-self: button;
-										}
-									</style>   
-									<div class="assinatura text-center">   
+									<div id="assinatura" class="text-center">   
 										<p>
 											CNPJ  07.088.465/0001-95 - Desenvolvido por Rafael Almeida.
 										</p>
